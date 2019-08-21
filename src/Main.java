@@ -23,11 +23,14 @@ public class Main {
         Scanner input = new Scanner(file);
         List<Integer> fileNumbers = new ArrayList<>();
 
-        while (input.hasNextInt()){
-            int fileNumber = input.nextInt();
-            fileNumbers.add(fileNumber);
+        do {
+            if (input.hasNextInt()){
+                int fileNumber = input.nextInt();
+                fileNumbers.add(fileNumber);
+            }
+            } while (input.hasNextInt());
 
-    }
+        
         return fileNumbers;
     }
 
