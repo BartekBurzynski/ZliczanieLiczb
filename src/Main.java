@@ -2,16 +2,17 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
+
 public class Main {
     public static void main(String[] args) {
 
         List<Integer> num = null;
         try {
             num = downloadNumbers("text.txt");
+            frequencyCount(num);
         } catch (FileNotFoundException e) {
             System.out.println("nie ma takiego pliku");
         }
-        frequencyCount(num);
 
     }
 
