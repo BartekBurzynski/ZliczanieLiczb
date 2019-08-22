@@ -24,7 +24,7 @@ public class Main {
     }
 
     private static List<Integer> downloadNumbers(String usedFile) throws FileNotFoundException {
-        File file = new File("text.txt");
+        File file = new File(usedFile);
         Scanner input = new Scanner(file);
         List<Integer> fileNumbers = new ArrayList<>();
 
